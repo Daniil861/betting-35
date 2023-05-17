@@ -1,9 +1,9 @@
 import { deleteMoney, checkRemoveAddClass, noMoney, getRandom, addMoney, getRandom_2 } from './functions.js';
 import { startData } from './startData.js';
 
-if (sessionStorage.getItem('privacy') && document.querySelector('.preloader')) {
-	document.querySelector('.preloader').classList.add('_hide');
-}
+// if (sessionStorage.getItem('privacy') && document.querySelector('.preloader')) {
+// 	document.querySelector('.preloader').classList.add('_hide');
+// }
 
 export function initStartData() {
 

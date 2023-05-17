@@ -19,13 +19,12 @@ document.addEventListener('click', (e) => {
 	const money = +sessionStorage.getItem('money');
 	const currentBet = +sessionStorage.getItem('current-bet');
 
-	if (targetElement.closest('[data-btn="privacy"]') && preloader.classList.contains('_hide')) {
-		preloader.classList.remove('_hide');
+	if (targetElement.closest('[data-btn="privacy"]')) {
+		window.location.href = 'index.html';
 	}
 
 	if (targetElement.closest('.preloader__button')) {
-		preloader.classList.add('_hide');
-		sessionStorage.setItem('privacy', true);
+		window.location.href = 'main.html';
 	}
 
 	if (targetElement.closest('[data-btn="game"]')) {

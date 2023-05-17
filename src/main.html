@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Betting-35"
+})
+
+<body>
+	<div class="wrapper">
+		<div class="wrapper__main main">
+			<div class="main__body">
+				<div class="main__header header">
+					<div class="header__body">
+						<button type="button" data-btn="privacy" class="header__button bg-btn"><span>Privacy
+								Policy</span></button>
+						<div class="header__score-box score-box">
+							<div class="score-box__body bg-btn">
+								<div class="score-box__icon icon-coin"></div>
+								<span class="score-box__score score">0</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main__cards-box">
+					<div class="main__cards">
+						<div class="main__card card">
+							<div class="card__body">
+								<div class="card__image">
+									<img src="@img/other/card-1.png" alt="Image">
+								</div>
+								<button type="button" data-btn="slot" class="card__button button"><span>Play</span></button>
+							</div>
+						</div>
+						<div class="main__card card">
+							<div class="card__body">
+								<div class="card__image">
+									<img src="@img/other/card-2.png" alt="Image">
+								</div>
+								<button type="button" data-btn="game" class="card__button button"><span>Play</span></button>
+							</div>
+						</div>
+						<div class="main__card card _disabled">
+							<div class="card__body">
+								<div class="card__image">
+									<img src="@img/other/card-3.png" alt="Image">
+								</div>
+								<button type="button" class="card__button button"><span>Play</span></button>
+							</div>
+						</div>
+						<div class="main__card card _disabled">
+							<div class="card__body">
+								<div class="card__image">
+									<img src="@img/other/card-4.png" alt="Image">
+								</div>
+								<button type="button" class="card__button button"><span>Play</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="wrapper__slot slot">
+			<div class="slot__body">
+				<div class="slot__header header">
+					<div class="header__body">
+						<button type="button" data-btn="slot-home" class="header__button bg-btn"><span>Back</span></button>
+						<div class="header__title">
+							<img src="@img/slot/title.png" alt="Image">
+						</div>
+					</div>
+				</div>
+				<div class="slot__game">
+					<div class="slot__box">
+						<div class="slot__cont">
+							<div id="slot1" class="slot1">
+								<div id="reels1" class="reels1">
+									<div class="reel1"></div>
+									<div class="reel1"></div>
+									<div class="reel1"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slot__controls controls-slot">
+					<div class="controls-slot__body">
+						<div class="controls-slot__button-box">
+							<button type="button" data-btn="slot-start"
+								class="controls-slot__button-spin button-start"><span>Spin</span></button>
+						</div>
+						<div class="controls-slot__actions actions-controls">
+							<div class="actions-controls__body">
+								<div class="actions-controls__box">
+									<div class="actions-controls__score-box _bet">
+										<div data-btn="bet-down" class="actions-controls__minus"></div>
+										<div class="actions-controls__bet bg-btn">
+											<div class="actions-controls__icon icon-coin"></div>
+											<div class="actions-controls__score bet-score">0</div>
+										</div>
+										<div data-btn="bet-up" class="actions-controls__plus"></div>
+									</div>
+								</div>
+								<div class="actions-controls__box">
+									<div class="actions-controls__money">
+										<div class="actions-controls__empty"></div>
+										<div class="actions-controls__money-box score-box">
+											<div class="score-box__body bg-btn">
+												<div class="score-box__icon icon-coin"></div>
+												<span class="score-box__score score">0</span>
+											</div>
+										</div>
+										<div class="actions-controls__empty"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="wrapper__game game">
+			<div class="game__body">
+				<div class="game__header header">
+					<div class="header__body">
+						<button type="button" data-btn="game-home" class="header__button bg-btn"><span>Back</span></button>
+						<div class="header__title">
+							<img src="@img/game/title.png" alt="Image">
+						</div>
+					</div>
+				</div>
+				<div class="game__field field">
+					<div class="field__body">
+						<div class="field__gate-box">
+							<div class="field__gate"></div>
+							<div class="field__buttons">
+								<button type="button" data-circle="1" class="field__button _active"></button>
+								<button type="button" data-circle="2" class="field__button"></button>
+								<button type="button" data-circle="3" class="field__button"></button>
+							</div>
+							<div class="field__glowe"></div>
+							<div class="field__ball"></div>
+							<div class="field__result-text-box">
+								<div class="field__result-text">Lose</div>
+								<div class="field__score">0</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="game__footer footer-game">
+					<div class="footer-game__body">
+						<div class="footer-game__actions">
+							<div class="footer-game__bet-box bg-btn">
+								<div data-btn="bet-down" class="footer-game__minus"></div>
+								<div class="footer-game__bet">
+									<div class="footer-game__icon icon-coin"></div>
+									<div class="footer-game__score bet-score">0</div>
+								</div>
+								<div data-btn="bet-up" class="footer-game__plus"></div>
+							</div>
+							<div class="footer-game__money-box score-box">
+								<div class="score-box__body bg-btn">
+									<div class="score-box__icon icon-coin"></div>
+									<span class="score-box__score score">0</span>
+								</div>
+							</div>
+						</div>
+						<div class="footer-game__buttons-box">
+							<button type="button" class="footer-game__button button-start"><span>Go</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
